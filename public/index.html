@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Musica :: Your ultimate place of online music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Graph CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="css/icon-font.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./css/izitoast.css" />
+    <!-- //lined-icons -->
+    <!-- Meters graphs -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <style>
+      ul.mejs li{display:none;}
+      
+     </style>
+  </head>
+  <body class="sticky-header left-side-collapsed" onload="initMap()">
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+
+    <div id="app"></div>
+  
+    
+    <!--audio-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/audio.css" />
+    
+    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="js/mep-feature-playlist.js"></script>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+      $(function() {
+        $("audio").mediaelementplayer({
+          alwaysShowControls: true,
+          toggleCaptionsButtonWhenOnlyOne: true,
+          audioVolume: "horizontal",
+          iPadUseNativeControls: true,
+          iPhoneUseNativeControls: true,
+          AndroidUseNativeControls: true,
+          loop: true,
+          features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'progress', 'volume'],
+        });
+      });
+    </script>
+    
+    <!-- search-scripts -->
+    <script src="js/classie.js"></script>
+    <script src="js/uisearch.js"></script>
+    <script>
+       $(function() {
+      new UISearch(document.getElementById("sb-search"));
+    });
+    </script>
+    <!-- //search-scripts -->
+    <!--banner-->
+    <script src="js/responsiveslides.min.js"></script>
+    
+    <script>
+      // You can also use "$(window).load(function() {"
+
+      $(window).load(function() {
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: false,
+          speed: 500,
+        });
+      });
+    </script>
+    <!-- pop-up-box -->
+    <link
+      href="css/popuo-box.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
