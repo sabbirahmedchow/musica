@@ -19,11 +19,11 @@ if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
 }
 
-console.log("/app/vendor/ffmpeg/bin");
+console.log("ffmpeg");
   
 var YD = new YoutubeMp3Downloader({
       
-    "ffmpegPath": "/app/vendor/ffmpeg/bin",        // FFmpeg binary location
+    "ffmpegPath": "ffmpeg",        // FFmpeg binary location
     "outputPath": "./public/media/"+usr,    // Output file location (default: the home directory)
     "youtubeVideoQuality": "highestaudio",  // Desired video quality (default: highestaudio)
     "queueParallelism": 2,                  // Download parallelism (default: 1)

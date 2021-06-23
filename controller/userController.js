@@ -61,7 +61,7 @@ module.exports.userUpdateAccount = async (req, res) =>{
     req.body.password = hashP;
   }
   const data = req.body;
-  console.log(data);
+  //console.log(data);
   const id = {_id: req.user };
   user.findByIdAndUpdate(id, data, function(err, userRes) {
     if(err)
