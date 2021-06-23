@@ -62,7 +62,7 @@ module.exports.userUpdateAccount = async (req, res) =>{
   }
   const data = req.body;
   console.log(data);
-  const id = {_id: req.user.user };
+  const id = {_id: req.user };
   user.findByIdAndUpdate(id, data, function(err, userRes) {
     if(err)
     {
