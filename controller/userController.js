@@ -50,7 +50,7 @@ module.exports.userUpdateAccount = async (req, res) =>{
   
   if(req.body.password == "")
   {
-    await user.findOne({ _id: req.user.user }, function(err, userRes) {
+    await user.findOne({ _id: req.user }, function(err, userRes) {
       if(err){console.log(err);}
       req.body.password = userRes.password;
    });
